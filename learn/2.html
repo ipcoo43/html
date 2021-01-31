@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html structure</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  header{
+    text-align : center;
+    border: 1px solid black;
+  }
+  nav {
+    text-align : center;
+    border: 1px solid black;
+  }
+  aside {
+    width:30%;
+    float:left;
+  }
+  main {
+    width: 70%;
+    float:left;
+  }
+  section{
+    width:50%;
+    float:left;
+  }
+  article{
+    clear: both;
+  }
+  footer {
+    text-align : center;
+    border: 1px solid black;
+    clear: both;
+  }
+</style>
+</head>
+<body>
+  <!-- 사용자에게 보여지지 않음 : header, nav, asid, main, section, article, dir, span, footer -->
+  <!-- 사용자에게 보여짐 : button -->
+  <header>header</header> 
+  <nav>nav</nav>
+  <aside>
+    <ol type='1' reversed>
+      <li>Box</li>
+      <li>Item</li>
+      <li>Block</li>
+      <li>Inline</li>
+      <li>Input</li>
+    </ol>
+  </aside>
+  <main>
+    <ul>
+      <li>block : 한 줄에 하나 배치</li>
+      <li>inline : 한 줄에 공간이 비어 있으면 배치 할 수 있음</li>
+      <li><a href="google.com" target='blank'>google.com</a></li>
+      <li><p>This is a sentence. <b>b is inline</b> </p>
+        <p>This is a sentence. <span>span is inline</span> </p>
+        <p>This is a sentence. <div>div is block</div> </p>
+      </li>
+      <li>
+        <label for="name">name: </label>
+        <input type="text" id='name'>
+        <label for="color">color</label>
+        <input type="color" id='color'>
+        <label for="file">file</label>
+        <input type="file" name="file" id="file">
+      </li>
+    </ul>
+  </main>
+  <footer>footer</footer>
+</body>
+</html>

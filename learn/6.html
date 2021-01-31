@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+<style>
+  div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: red;
+  }
+  .container{
+    background:yellow;
+    left: 20px;
+    top: 20px;
+    position: relative; 
+  }
+  .box_relative {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    position: relative; /*realtive : 원래의 자리에서 20, 20 이동 */
+  }
+  .box_absolute {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    position: absolute; /*absolute : 담겨있는 상자안에서  20, 20 이동 */
+  }
+  .box_fixed {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    position: fixed; /*fixed : 상자안에서 벗어나서 페이지 상에서 20, 20 이동 */
+  }
+  .box_sticky {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    position: sticky; /*sticky : 원래 있어야 할 자리에 있으면서 스크롤이 되도 그 자리에 있다. */
+  }
+</style>
+</head>
+<body>
+  <article class="container">
+    <div></div>
+    <div class="box_relative">I'm relative</div>
+    <div class="box_absolue">I'm absolue</div>
+    <div class="box_fixed">I'm fixed</div>
+    <div class="box_sticky">I'm sticky</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </article>
+</body>
+</html>

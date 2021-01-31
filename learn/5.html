@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block level & Inline level</title>
+<style>
+  div, span{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+  }
+  div {
+    background-color: red;
+  }
+  div.inline{
+    display: inline;
+  }
+  div.inline-block{
+    display: inline-block;
+  }
+  span{
+    background-color: green;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <!-- Block-level -->
+  <div>div 1</div>
+  <div class='inline'>div 2</div>
+  <div class='inline-block'>div 3</div>
+  <!-- Inline level -->
+  <span>span 1</span>
+  <span>span 2</span>
+  <span>span 3</span>
+</body>
+</html>
