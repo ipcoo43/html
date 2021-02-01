@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  /* direction(방향) : row 기본 값, column */
+  flex-direction: row;
+  /* wrap(컨테이너가 줄어 들었을 때 어떻게 할 것인가) : nowrap 기본 값, wrap*/
+  /* nowrap : 줄어 들어도 그대로 붙어있음, wrap: 줄어 들면 아래로 떨어짐 */
+  flex-wrap: nowrap;
+  /* justify-content: 가로 방향으로 정렬 
+  flex-start(시작) 기본 값, flex-end(끝), center(가운데) 
+  space-between : 남은 여백을 똑 같이 배분 한다
+  space-around : 남은 여백을 양 옆에도 똑 같이 배분 한다 */
+  justify-content: flex-start;
+  /* align-items: 세로 방향으로 정렬
+  stretch 기본 값 : 전체를 쭉 늘어져 있다.
+  flex-start : 위에 달라 붙는다
+  flex-end : 아래에 달라 붙는다 
+  center : 가운데 달라 붙는다.
+  */
+  align-items: stretch;
+  /* 
+  flex-wrap: wrap; 일 때 사용 한다.
+  flex-start : 위에 달라 붙는다
+  flex-end : 아래 달라 붙는다
+  center : 가운데에 있다.
+  space-between : 여백을 똑 같이 배분하여 자리 잡는다.
+  space-around : 여백을 위와 아래도 똑 같이 배분 
+  */
+  align-content: flex-start;
+  height: 100vh;
+  background: lightgrey;
+}
+
+.item {
+/* flex-base : auto 기본 값, 남은 여백을 나눠 간다.
+  0 : 자신들이 차지하는 공간을 0으로 만들고 비율로 나눠 가진다.
+*/
+  flex-basis: 0;
+  background: rgba(255, 0, 0, 0.5)
+}
+
+.item.nth-child(1){
+/* flex-grow(팽창) : 컨테이너에 남아있던 공간을 넓일 때 서로 찾지 함
+  flex-grow: 숫자 -> 아이템 3개가 남은 여백을 숫자의 비율로 차지 한다.
+*/
+  flex-grow: 1;
+/* flex-shrink(수축) : 컨테이너가 좁아질 때 서로 줄어 들어 는 비율 */
+  flex-shrink: 1;
+/* flex-basis: auto 이어도 팽창과 수축을 다 한다. */
+  flex: 1;
+  align-self: flex-start;
+  order: 1;
+}
+
+.item.nth-child(2){
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex: 2;
+  align-self: flex-center;
+  order: 2;
+}
+
+.item.nth-child(3){
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex: 1;
+  align-self: flex-end;
+  order: 3;
+}
+
+.item:nth-child(odd) {
+  background: rgba(255, 255, 0, 0.5)
+}
