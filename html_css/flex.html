@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Page</title>
+  <link rel="stylesheet" href="main.css">
+<style>
+.wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: row;
+}
+
+.item {
+}
+
+.item:nth-child(1){
+  background-color: red;
+}
+
+.item:nth-child(2){
+  background-color: green;
+}
+
+.item:nth-child(3){
+  background-color: blue;
+}
+
+.inner:nth-child(1){
+  background-color: aqua;
+}
+
+.inner:nth-child(2){
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="item">1</div>
+    <div class="item">
+      <div class="inner">title</div>
+      <div class="inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, in?</div>
+  </div>  
+</body>
+</html>

@@ -9,11 +9,18 @@ body {
   overflow-x: hidden; /* x축의 스크롤 바를 숨김 */
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-size: 30px;
+  font-weight: 400;
   line-height: 1;
-  font-weight: normal;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 p {
@@ -29,84 +36,60 @@ li {
   list-style: none;
 }
 
-.text-area {
-  margin-top: 90px;
-  margin-left: 24px;
+a {
+  color: #ffe6cf;
+  text-decoration: none;
 }
 
-.line{
-  width: 46px;
-  height: 1px;
-  display: inline-block;
-  position: relative;
-  top: -7px;
-  background-color: #ffe6cf;
-  opacity: 0.2;
+input {
+  background-color: rgba(255,255,255,0.08); /* transparent */
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  transition: 0.2s;
 }
 
-.text-area h1 {
-  margin-bottom: 22px;
+input:focus {
+  outline: none;
+  background-color: rgba(255,255,255,0.12);
+  text-align: center;
 }
 
-.volume {
-  margin-bottom: 85px;
+input::placeholder {
+  color: rgba(255,255,255,0.3);
+  text-align: center;
 }
 
-#circle-wrapper {
-  position: relative;
-  margin-left: 24px;
-  margin-top: 42px;
-}
-
-.circle {
-  width: 246px;
-  height: 246px;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.circle:nth-child(1) {
+button {
   background-color: transparent;
-  border: 1px solid black;
-  opacity: 0.2;
-  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: #ffe6cf;
+  font-size: 15px;
 }
 
-.circle:nth-child(2) {
-  background-color: #ffc000;
-  left:100px;
+.mouse-effect {
+  position: relative;
+  overflow: hidden;
 }
 
-.circle:nth-child(3) {
-  background-color: #fedd15;
-  left:200px;
-  transition: 1s; /* 트랜지션이 될때 1초 동안 움직여라 */
+.mouse-effect:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
   top: 0;
+  transition: 0.2s;
 }
 
-.circle:nth-child(3):hover {
-  background-color: blue;
-  top: -20px;
+.mouse-effect:hover:after {
+  background-color: rgba(0,0,0,0.08);
 }
 
-.circle:nth-child(3):active {
-  background-color: red;
-  top: -20px;
+.mouse-effect:active:after {
+  background-color: rgba(0,0,0,0.12);
 }
 
-#badge {
-  background-color: #ffc000;
-  width: 56px;
-  height: 56px;
-  color: #485861;
-  margin-left: 24px;
-  padding-left: 13px;
-  padding-top: 18px;
-  font-size: 9px;
-  line-height: 11px;
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: 24px;
-  font-weight: bold;
-}
