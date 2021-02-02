@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+  }
+
+  #wrapper {
+    margin-left: 100px;
+    position: relative; /* 부모 relative를 주고 */
+    height: auto;
+    border: 10px solid green;
+  }
+
+  #two {
+    background-color: blue;
+    position: absolute; /* 자신에게 absolute주면 부모를 벗어나지 못함, fixed는 부모도 무시하고 자리 잡음 */
+    left: 12px;
+    top: 24px;
+  }
+  
+  
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+  </div>
+</body>
+</html>
