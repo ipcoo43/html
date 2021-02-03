@@ -21,7 +21,6 @@ header .badge {
   width: 28px;
   height: 28px;
   font-size: 12px;
-  /* margin: 0 auto; */
   position: absolute;
   background-color: #ff5500;
   border-radius: 50%;
@@ -30,10 +29,6 @@ header .badge {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: scaleUP 0.5s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-fill-mode: both;
-  animation-delay: 0.5s;
 }
 
 header .greeting {
@@ -84,3 +79,70 @@ header .mail {
   padding-right: 14px;
 }
 
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-inner {
+  width: calc(100% - 48px);
+  background-color: #485861;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: showPopup 0.75s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-inner .thumb {
+  height: 234px;
+  background-color: aliceblue;
+  background-image: url('./img/likes-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-info .title {
+  font-size: 17px;
+}
+
+.bottom-info .description {
+  margin-top: 4px;
+  line-height: 19px;
+  font-size: 12px;
+}
+
+.bottom-info button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px solid rgba(255, 230, 207, 0.28);
+  border-radius: 4px;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+.bottom-info {
+  height: 212px;
+  padding: 24px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.5s;
+  animation-fill-mode: both;
+}

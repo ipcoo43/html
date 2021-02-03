@@ -1,0 +1,100 @@
+@keyframes showText {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+    color: aqua;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.stagger-item {
+  animation: showText 0.5s;
+  animation-fill-mode: both;
+}
+
+.stagger-item:nth-child(1) {
+  animation-delay: 0.07s;
+}
+
+.stagger-item:nth-child(2) {
+  animation-delay: 0.14s;
+}
+
+.stagger-item:nth-child(3) {
+  animation-delay: 0.21s;
+}
+
+.stagger-item:nth-child(4) {
+  animation-delay: 0.28s;
+}
+
+.stagger-item:nth-child(5) {
+  animation-delay: 0.35s;
+}
+
+@keyframes showItemFromRight {
+  from {
+    transform: translateX(30px) scaleX(1.1);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.stagger-item.right {
+  animation-name: showItemFromRight;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes showPopup {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+     opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

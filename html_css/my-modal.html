@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="my.css">
+  <link rel="stylesheet" href="my-modal.css">
   <link rel="stylesheet" href="animation.css">
-  <title>My Page</title>
+  <title>Modal</title>
 </head>
+
 <body>
   <header>
     <div class="thumb-wrapper">
-      <a href="my-modal.html"><img class="thumb" src="./img/user-thumb.png" alt=""></a>
+      <img class="thumb" src="./img/user-thumb.png" alt="">
       <div class="badge">7</div>
     </div>
 
     <div class="text-area">
-  <link rel="stylesheet" href="my.css">
-      <h2 class="greeting stagger-item">Hi, Mary Jane</h2>
-      <div class="desc stagger-item">Lorem ipsum dolor sit amet<br>
+      <link rel="stylesheet" href="my.css">
+      <h2 class="greeting ">Hi, Mary Jane</h2>
+      <div class="desc ">Lorem ipsum dolor sit amet<br>
         consectetur adipisicing elit.
       </div>
     </div>
-    <div class="mail mouse-effect stagger-item">
+    <div class="mail mouse-effect ">
       <a href="mailto:ipcoo43@gmail.com">ipcoo43@gmail.com</a>
     </div>
   </header>
 
   <ul class="list">
-    <li class="item mouse-effect stagger-item">
+    <li class="item mouse-effect ">
       <div class="left">
         <img src="./img/icon/bookmark.svg" alt="">
         <div class="name">Bookmark</div>
@@ -38,7 +40,7 @@
       </div>
     </li>
 
-    <li class="item mouse-effect stagger-item">
+    <li class="item mouse-effect ">
       <div class="left">
         <img src="./img/icon/account.svg" alt="">
         <div class="name">Account info</div>
@@ -48,7 +50,7 @@
       </div>
     </li>
 
-    <li class="item mouse-effect stagger-item">
+    <li class="item mouse-effect ">
       <div class="left">
         <img src="./img/icon/business.svg" alt="">
         <div class="name">Business</div>
@@ -58,14 +60,12 @@
       </div>
     </li>
 
-    <li class="item mouse-effect stagger-item">
+    <li class="item mouse-effect ">
       <div class="left">
         <img src="./img/icon/puzzle.svg" alt="">
         <div class="name">Blah Blash</div>
       </div>
-      <div class="right">
-        <img src="./img/icon/right_arrow.svg" alt="">
-      </div>
+      <div class="right"></div>
     </li>
   </ul>
 
@@ -84,5 +84,23 @@
     </a>
   </nav>
 
+  <div class="overlay"></div>
+
+  <div class="modal-wrapper">
+    <div class="modal-inner">
+      <div class="thumb">
+        <img src="" alt="">
+      </div>
+      <div class="bottom-info">
+        <div class="title">Dear, Designers.</div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam odit nisi, consequuntur soluta corporis facere alias illum iusto adipisci.  
+        </p>
+        <a href="my.html"><button>Close</button></a>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
